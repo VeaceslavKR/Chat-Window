@@ -22,7 +22,6 @@ function initChat() {
 function sendMessage(e) {
   e.preventDefault();
 
-  // HW:6 uite pe video min 34:00
   let message = {
     content: chatInput.value,
   };
@@ -39,7 +38,6 @@ function sendMessages() {
 function renderMessages() {
   let html = `<ul>`;
 
-  // HW5: rewrite the loop code using array.forEach ()
   for (let i = Math.max(messages.length - 6, 0); i < messages.length; i++) {
     html += `<li>${messages[i].content}</li>`;
   }
